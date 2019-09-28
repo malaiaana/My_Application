@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="197dp"
+        android:layout_height="51dp"
+        android:backgroundTint="#BEE2FF"
+        android:shadowColor="#091663"
+        android:text="Уведомление"
+        android:textColor="#FF273AAA"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="137dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#BEE2FF"
+        android:text="Ищи, холоп"
+        android:textColor="#FF273AAA"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/request"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/request"
+        app:layout_constraintTop_toBottomOf="@+id/request" />
+
+    <EditText
+        android:id="@+id/request"
+        android:layout_width="249dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#2196F3"
+        android:ems="10"
+        android:hint="Enter your search"
+        android:inputType="textPersonName"
+        android:textColorHint="#2196F3"
+        android:textColorLink="#1C32B1"
+        android:textCursorDrawable="@android:color/holo_blue_bright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.271"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/photo"
+        android:layout_width="140dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#BEE2FF"
+        android:text="Сделай фотографию"
+        android:textColor="#FF273AAA"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        tools:ignore="MissingConstraints" />
+
+    <RadioGroup
+        android:id="@+id/check_group"
+        android:layout_width="197dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/show_i"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/request"
+        app:layout_constraintTop_toBottomOf="@+id/button2">
+
+        <RadioButton
+            android:id="@+id/front"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#2196F3"
+            android:drawableTint="#FFC107"
+            android:text="Фронтальная камера"
+            android:textColor="#FF273AAA"
+            android:textColorHighlight="#2196F3"
+            android:textColorLink="#FF273AAA"
+            android:textCursorDrawable="@android:color/holo_orange_light" />
+
+        <RadioButton
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#2196F3"
+            android:text="Задняя камера"
+            android:textColor="#FF273AAA"
+            android:textColorHighlight="#2196F3"
+            android:textColorLink="#FF273AAA"
+            android:textCursorDrawable="@android:color/holo_orange_light" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/show_i"
+        android:layout_width="140dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#BEE2FF"
+        android:text="посмотришь на фотографию?"
+        android:textColor="#FF273AAA"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@+id/photo"
+        app:layout_constraintTop_toBottomOf="@+id/photo" />
+
+    <Button
+        android:id="@+id/new_act"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#BEE2FF"
+        android:text="Хочешь немного пооценивать?"
+        android:textColor="#FF273AAA"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/show_i" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
